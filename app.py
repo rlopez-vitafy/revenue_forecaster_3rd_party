@@ -313,10 +313,6 @@ if start_prediction:
                                       max_features= 'auto'
                                      )
 
-            # Handle NaN values (replace or remove)
-            X_train = np.nan_to_num(X_train)  # Replace NaN with 0
-            y_train = np.nan_to_num(y_train)  # Replace NaN with 0
-
 
             model_dtr.fit(X_train, y_train)
 
