@@ -313,15 +313,6 @@ if start_prediction:
                                       max_features= 'auto'
                                      )
 
-
-            # Check for NaN values in X_train and y_train
-            nan_check_X = np.isnan(X_train)
-            nan_check_y = np.isnan(y_train)
-
-            # Print the indices of NaN values, if any
-            print("NaN values in X_train:", np.argwhere(nan_check_X))
-            print("NaN values in y_train:", np.argwhere(nan_check_y))
-
             # Handle NaN values (replace or remove)
             X_train = np.nan_to_num(X_train)  # Replace NaN with 0
             y_train = np.nan_to_num(y_train)  # Replace NaN with 0
