@@ -289,7 +289,7 @@ if start_prediction:
 
         if status_brand_mehrfach == 'vorhandene Brand':
         
-            X_pred_mehrfach = df_uploaded[['brand', 'tag_primary', 'tag_secondary', 'tag_tertiary', 'private_label_flag', 'geschmack_filter', 'product_dosage_form', 'vk_brutto', 'potenzialfaktor', 'qty sold perzentil', 'Sales Rank']]
+            X_pred_mehrfach = df_uploaded[['brand', 'tag_primary', 'tag_secondary', 'tag_tertiary', 'private_label_flag', 'geschmack_filter', 'product_dosage_form', 'vk_brutto', 'potenzialfaktor', 'qty sold perzentil']]
             df_output = df_uploaded[['product_id', 'sku', 'brand', 'product_name' , 'tag_tertiary']]       
 
             cf = ColumnTransformer([
@@ -375,8 +375,8 @@ if start_prediction:
         
         
         else:
-            
-            
+
+
             X_pred_mehrfach = df_uploaded[['tag_primary', 'tag_secondary', 'tag_tertiary', 'private_label_flag', 'geschmack_filter', 'product_dosage_form', 'vk_brutto', 'potenzialfaktor', 'qty sold perzentil', 'Sales Rank']]
             df_output = df_uploaded[['product_id', 'sku', 'brand', 'product_name' , 'tag_tertiary']]       
 
