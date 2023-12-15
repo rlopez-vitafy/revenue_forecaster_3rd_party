@@ -174,7 +174,7 @@ if start_prediction:
 
             y_pred = model_dtr.predict(X_transformed)
             df_m = df_OPS
-            df_m[['Prediction']] = y_pred
+            df_m['Prediction'] = y_pred
 
             df_m.drop(df_m[df_m['Prediction'] == 0].index, inplace=True)
 
@@ -247,7 +247,7 @@ if start_prediction:
 
             y_pred = model_dtr.predict(X_transformed)
             df_m = df_OPS
-            df_m[['Prediction']] = y_pred
+            df_m['Prediction'] = y_pred
 
             df_m.drop(df_m[df_m['Prediction'] == 0].index, inplace=True)
 
@@ -325,7 +325,7 @@ if start_prediction:
             y_pred = model_dtr.predict(X_transformed)
 
             df_m = df_OPS
-            df_m[['Prediction']] = y_pred
+            df_m['Prediction'] = y_pred
 
             df_m.drop(df_m[df_m['Prediction'] == 0].index, inplace=True)
 
@@ -414,7 +414,7 @@ if start_prediction:
             y_pred = model_dtr.predict(X_transformed)
 
             df_m = df_OPS
-            df_m[['Prediction']] = y_pred
+            df_m['Prediction'] = y_pred
 
             df_m.drop(df_m[df_m['Prediction'] == 0].index, inplace=True)
 
